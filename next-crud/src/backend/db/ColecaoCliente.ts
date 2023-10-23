@@ -37,7 +37,7 @@ conversor = {
   private colecao(){
     return firebase
     .firestore().collection('clientes')
-    .withConverter(this.#conversor)
+    .withConverter(this.conversor)
   }
 }
 
